@@ -1,6 +1,9 @@
 import React from 'react';
 import Project from './Project';
-import Footer from '../Footer/Footer';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 
 const Portfolio = () => {
@@ -16,13 +19,17 @@ const Portfolio = () => {
     ]
 
     return (
-        <>
-            <div>
-                <Project />
+        <Container fluid>
+        <Row>
+            {projects.map((project, index) => (
+                <Col key={index}>
+                <Project project= {project}/>
+                </Col>
+            )
+            )}
+        </Row>
+    </Container>
 
-            </div>
-            <Footer />
-        </>
     )
 }
 
