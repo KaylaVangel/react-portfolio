@@ -18,8 +18,6 @@ const Page = ({currentPage}) => {
             return <Portfolio/>
             case "Resume":
             return <Resume/>
-
-
         }
     }
   return (

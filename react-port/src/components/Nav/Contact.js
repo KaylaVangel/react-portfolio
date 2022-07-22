@@ -1,17 +1,17 @@
-import Footer from '../Footer';
+import Footer from '../Footer/Footer';
 //copied from class work//
 import React, { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 const Contact= () => {  
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Label>Name</Form.Label>
+        <Form.Control type="test" placeholder="Please enter Full Name" />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+      
         </Form.Text>
       </Form.Group>
 
@@ -19,7 +19,7 @@ const Contact= () => {
         <Form.Label>Commments</Form.Label>
         <Form.Control  as="textarea" placeholder="Comments" />
       </Form.Group>
-      <a className="button" href="mailto:kayla.vangel@comcast.net">Submit</a> 
+      <Button  href="mailto:kayla.vangel@comcast.net">Submit</Button> 
     </Form>
     
   );

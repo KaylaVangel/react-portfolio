@@ -4,7 +4,7 @@ const Resume = () => {
     return (
         <>
             <div>
-            <a href="./resume">Resume</a>
+            <a href="./resume.docx">Resume</a>
             </div>
         </>
     );
