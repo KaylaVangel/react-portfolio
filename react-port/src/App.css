@@ -1,0 +1,10 @@
+.Nav {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}

@@ -1,19 +1,23 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
-const Nav = () => {
+const Nav = ({pages = [], setCurrentPage, currentPage}) => {
+
     return (
-        <>
-            <div>
-                <h1>Kayla</h1>
-                <h3>About Me</h3>
-                <h3>Portfolio</h3>
-                <h3>Contact</h3>
-                <h3>Resume</h3>
+        <Container fluid>
+            <Row>
+                {pages.map((Page, index) => (
+                    <Col key={index}>
+                        <span onClick={() => setCurrentPage(Page)}>{(Page.name)}</span>
+                    </Col>
+                )
+                )}
+            </Row>
+        </Container>
 
-            </div>
-    
-        </>
     )
 }
 
