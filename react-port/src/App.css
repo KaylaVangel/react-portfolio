@@ -1,6 +1,11 @@
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+h2, h3 {
+  color:rgb(189, 129, 233);
+}
+
 .container-fluid {
   font-family: Georgia, 'Times New Roman', Times, serif;  
   flex-basis: content;
@@ -40,7 +45,9 @@ img:hover {
 }
 
 .header {
-  margin: 20px 20px 20px 20px;
+  padding: 20px;
+  background-image: url("../public/Images/headerima.jpg");
+  background-position: cover;
 }
 
 .navbar {
@@ -67,11 +74,11 @@ img:hover {
 }
 
 a.nav-link {
-  color: aliceblue;
+  color:rgb(189, 129, 233)
 }
 
 .nav-link:focus, .nav-link:hover {
-  color:rgb(205, 180, 219) !important;
+  color:rgb(250, 209, 240) !important;
 }
 
 .innerHeader {
@@ -81,6 +88,7 @@ a.nav-link {
 .innerHeader h1 {
   width: 100%;
   text-align: center;
+  color:rgb(189, 129, 233)
 }
 
 .innerHeader img {
@@ -91,3 +99,22 @@ a.nav-link {
   margin-right: 20px;
   margin-bottom: 20px;
 } 
+.btn-primary{
+  background-color: rgb(162, 210, 255)!important;
+  border-color:rgb(92, 178, 248) !important;
+}
+ 
+.resume a {
+  flex-wrap: wrap;
+  color: rgb(92, 178, 248) !important;
+  text-decoration: none !important;
+  font-size: larger;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+
+
+.headerBackground {
+  position: relative;
+}
