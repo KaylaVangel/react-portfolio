@@ -9,7 +9,6 @@ h2, h3 {
 .container-fluid {
   font-family: Georgia, 'Times New Roman', Times, serif;  
   flex-basis: content;
-  /* color: rgb(205, 180, 219) !important; */
 }
 
 .title {
@@ -114,7 +113,7 @@ a.nav-link {
   justify-content: center;
 }
 
-
+/* 
 .headerBackground {
   position: relative;
-}
+} */
