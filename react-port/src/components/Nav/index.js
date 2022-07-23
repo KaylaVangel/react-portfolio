@@ -1,25 +1,27 @@
-import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-
-const Nav = ({pages = [], setCurrentPage, currentPage}) => {
-
+const Navigation = ({pages = [], setCurrentPage, currentPage}) => {
     return (
-        <Container fluid>
-            <Row>
-                {pages.map((Page, index) => (
-                    <Col key={index}>
-                        <span onClick={() => setCurrentPage(Page)}>{(Page.name)}</span>
-                    </Col>
-                )
-                )}
-            </Row>
-        </Container>
-
-    )
+        <Navbar sticky="top" className='Nav'>
+            <Container fluid>
+                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        {pages.map((Page, index) => (
+                            <Nav.Link onClick={() => setCurrentPage(Page)}>{(Page.name)}</Nav.Link>
+                        )
+                        )}
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }
 
-
-export default Nav;
+export default Navigation;

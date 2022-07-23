@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <>
-            <div>
+            <div className= "footer">
                 <a href="https://github.com/KaylaVangel">
                     <img alt="GitHub" src="Images/GitHubicon.PNG"
                         width="70" height="70"/>
@@ -12,6 +12,7 @@ const Footer = () => {
                     <img alt="LinkedIn" src="Images/LinkedIn icon.PNG"
                         width="70" height="70"/>
                 </a>
+                <p>Created by Kayla</p>
 
             </div>
         </>

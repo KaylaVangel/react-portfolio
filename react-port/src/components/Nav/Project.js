@@ -1,16 +1,18 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 
-const Project = ({project}) => {
+
+const Project = ({ project }) => {
     return (
-        <>
-            <div>
-                {project.name}
-                <img className="projectImage" src={project.image}/>
-                <a href>{project.link}</a>
-                
-            </div>
-        </>
+        <Card style={{ width: '30rem' }}>
+            <Card.Img variant="top" src={project.image} />
+            <Card.Body>
+                <Card.Title>{project.name}</Card.Title>
+                <Button href={project.link} variant="primary">Check it out!</Button>
+            </Card.Body>
+        </Card>
     );
 }
 
