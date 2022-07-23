@@ -1,3 +1,6 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .container-fluid {
   font-family: Georgia, 'Times New Roman', Times, serif;  
   flex-basis: content;
@@ -45,12 +48,6 @@ img:hover {
   font-size: large;
 }
 
-/* #navbarScroll {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-} */
-
 .navbar>.container-fluid {
   flex-basis: auto;
 }
@@ -89,3 +86,8 @@ a.nav-link {
 .innerHeader img {
   border-radius: 100px;
 }
+
+.footer img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+} 
