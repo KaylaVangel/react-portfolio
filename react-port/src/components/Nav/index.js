@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Navigation = ({pages = [], setCurrentPage, currentPage}) => {
     return (
-        <Navbar sticky="top" className='Nav'>
+        <Navbar className='Nav ml-auto'>
             <Container fluid>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">

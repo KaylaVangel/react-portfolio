@@ -1,5 +1,3 @@
-import Footer from '../Footer/Footer';
-//copied from class work//
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -23,7 +21,7 @@ const Contact= () => {
     </Form>
     
   );
-  <Footer/>
+  
 }
 
 export default Contact
