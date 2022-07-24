@@ -66,7 +66,7 @@ function Contact() {
           </Form.Control.Feedback>
         </Form.Group>
       </Row>
-      <Button type="submit" href="mailto:kayla.vangel@comcast.net">Submit</Button>
+      <Button type="submit">Submit</Button>
     </Form>
   );
 }
