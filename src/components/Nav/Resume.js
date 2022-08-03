@@ -15,7 +15,6 @@ const Resume = () => {
                     <li>React</li>
                     <li>MongoDB</li>
                     <li>Mongoose</li>
-                    <li>JavaScript</li>
                 </ul>
             </p>
             <a href="./resume.docx">Downloadable Resume</a>
